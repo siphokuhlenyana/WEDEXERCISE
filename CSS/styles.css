@@ -1,0 +1,118 @@
+body{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: 800;
+}
+
+
+
+
+
+p~ table {
+    border:burlywood solid 2px  ;
+   margin-right: auto;
+    margin-left: auto;
+    
+}
+h2{
+ color: brown;
+}
+
+.nav{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* justify-content:space-evenly; */
+    
+    padding: 1rem;
+    color: aliceblue;
+
+    /* align-content: center; */
+    text-align: center;
+
+}
+ nav{
+    background-color: black;
+} 
+
+
+#main{
+    margin: 30px;
+    text-align: center;
+}
+
+
+aside{
+   border:10px dotted;
+   
+   
+}
+aside >p{
+    color: dimgrey;
+}
+aside article{
+    color: dimgrey;
+}
+aside +p + button{
+    color: cornflowerblue;
+}
+
+p~article{
+   background-color: aqua;
+}
+
+h3{
+
+    background-color: yellow;
+    padding: 2rex;  
+    display: none;
+    
+}
+#hover:hover h3{
+    
+    
+    cursor: pointer;
+    display: block
+}
+
+.nav a{
+    text-decoration: none;
+    padding: 1rem;
+    color: aliceblue;
+
+
+}
+a:active{
+    color: purple;
+
+}
+tr th:first-child {
+    background-color: yellowgreen;
+}
+/* tr:nth-child(2){ */
+    /* color: crimson; */
+/* } */
+
+tr td:first-child:hover{
+    color: crimson;
+    
+ } 
+p i:first-child{ 
+    color: blue; 
+} 
+p :is(i) {
+    color: peru;
+}
+body::selection {
+    color: yellowgreen;
+}
+.paragraph::first-line{
+  color: red;
+}
+.paragraph::first-letter{
+    color: blue;
+}
+
+article::before, article::after{
+    width: 150px;
+    height:150px;
+    content:url(https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif) ;
+}
